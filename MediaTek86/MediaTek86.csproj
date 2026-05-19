@@ -98,7 +98,11 @@
     <Compile Include="controleur\ControleurPersonnel.cs" />
     <Compile Include="modele\acces\BddManager.cs" />
     <Compile Include="modele\acces\Connexion.cs" />
+    <Compile Include="modele\dal\AccessPersonnel.cs" />
+    <Compile Include="modele\metier\Absence.cs" />
+    <Compile Include="modele\metier\Motif.cs" />
     <Compile Include="modele\metier\Personnel.cs" />
+    <Compile Include="modele\metier\Service.cs" />
     <Compile Include="vue\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

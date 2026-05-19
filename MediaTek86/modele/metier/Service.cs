@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace MediaTek86.modele.metier
 {
-    internal class Personnel
+    internal class Service
     {
         private int id;
         private string nom;
-        private string prenom;
-        private int idservice;
 
         public int Id { get => id; set => id = value; }
         public string Nom { get => nom; set => nom = value; }
-        public string Prenom { get => prenom; set => prenom = value; }
-        public int IdService { get => idservice; set => idservice = value; }
-
     }
 }
