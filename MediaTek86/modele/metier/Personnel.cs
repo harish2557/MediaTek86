@@ -18,5 +18,12 @@ namespace MediaTek86.modele.metier
         public string Prenom { get => prenom; set => prenom = value; }
         public int IdService { get => idservice; set => idservice = value; }
 
+        public Personnel(int id, string nom, string prenom, int idservice)
+        {
+            this.id = id;
+            this.nom = nom;
+            this.prenom = prenom;
+            this.idservice = idservice;
+        }
     }
 }
