@@ -20,7 +20,7 @@ namespace MediaTek86.controleur
                 new List<Personnel>();
 
             string requete =
-                "SELECT idpersonnel, nom, prenom, idservice  FROM personnel";
+                "SELECT idpersonnel, nom, prenom, idservice FROM personnel";
 
             MySqlDataReader reader =
                 bddManager.ReqSelect(requete);
@@ -43,6 +43,51 @@ namespace MediaTek86.controleur
             bddManager.CloseConnexion();
 
             return lesPersonnels;
+        }
+
+        public void AddPersonnel(Personnel personnel)
+        {
+            string requete =
+                "INSERT INTO personnel(nom, prenom, idservice) " +
+                "VALUES('" +
+                personnel.Nom + "','" +
+                personnel.Prenom + "'," +
+                personnel.IdService + ")";
+
+            bddManager = new BddManager();
+
+            bddManager.ReqMaj(requete);
+
+            bddManager.CloseConnexion();
+        }
+
+        public void DeletePersonnel(int id)
+        {
+            string requete =
+                "DELETE FROM personnel " +
+                "WHERE idpersonnel = " + id;
+
+            bddManager = new BddManager();
+
+            bddManager.ReqMaj(requete);
+
+            bddManager.CloseConnexion();
+        }
+
+        public void UpdatePersonnel(Personnel personnel)
+        {
+            string requete =
+                "UPDATE personnel SET " +
+                "nom = '" + personnel.Nom + "', " +
+                "prenom = '" + personnel.Prenom + "', " +
+                "idservice = " + personnel.IdService +
+                " WHERE idpersonnel = " + personnel.Id;
+
+            bddManager = new BddManager();
+
+            bddManager.ReqMaj(requete);
+
+            bddManager.CloseConnexion();
         }
     }
 }

@@ -97,6 +97,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controleur\ControleurAbsence.cs" />
     <Compile Include="controleur\ControleurPersonnel.cs" />
     <Compile Include="modele\acces\BddManager.cs" />
     <Compile Include="modele\acces\Connexion.cs" />
@@ -105,11 +106,11 @@
     <Compile Include="modele\metier\Motif.cs" />
     <Compile Include="modele\metier\Personnel.cs" />
     <Compile Include="modele\metier\Service.cs" />
-    <Compile Include="vue\Form1.cs">
+    <Compile Include="vue\FrmPersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vue\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="vue\FrmPersonnel.Designer.cs">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\FrmAbsence.cs">
       <SubType>Form</SubType>
@@ -146,8 +147,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="vue\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="vue\FrmPersonnel.resx">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\FrmAbsence.resx">
       <DependentUpon>FrmAbsence.cs</DependentUpon>

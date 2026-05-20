@@ -9,24 +9,50 @@ namespace MediaTek86.modele.acces
         public BddManager()
         {
             connexion = Connexion.GetConnexion();
+
+            connexion.Open();
         }
 
         public MySqlDataReader ReqSelect(string requete)
         {
-            connexion.Open();
+            if (connexion.State !=
+                System.Data.ConnectionState.Open)
+            {
+                connexion.Open();
+            }
 
             MySqlCommand commande =
-                new MySqlCommand(requete, connexion);
+                new MySqlCommand(
+                    requete,
+                    connexion
+                );
 
-            MySqlDataReader reader =
-                commande.ExecuteReader();
+            return commande.ExecuteReader();
+        }
 
-            return reader;
+        public void ReqMaj(string requete)
+        {
+            if (connexion.State !=
+                System.Data.ConnectionState.Open)
+            {
+                connexion.Open();
+            }
+
+            MySqlCommand commande =
+                new MySqlCommand(
+                    requete,
+                    connexion
+                );
+
+            commande.ExecuteNonQuery();
         }
 
         public void CloseConnexion()
         {
-            connexion.Close();
+            if (connexion != null)
+            {
+                connexion.Close();
+            }
         }
     }
 }

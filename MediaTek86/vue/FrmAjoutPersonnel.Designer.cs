@@ -3,14 +3,14 @@
     partial class FrmAjoutPersonnel
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable nécessaire au concepteur.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Nettoyage des ressources utilisées.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,108 +20,121 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Code généré par le Concepteur Windows Form
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelNom = new System.Windows.Forms.Label();
+            this.labelPrenom = new System.Windows.Forms.Label();
+            this.labelService = new System.Windows.Forms.Label();
+
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.txtService = new System.Windows.Forms.TextBox();
+
+            this.btnValider = new System.Windows.Forms.Button();
+
             this.SuspendLayout();
+
             // 
-            // label1
+            // labelNom
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(210, 169);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nom";
+            this.labelNom.AutoSize = true;
+            this.labelNom.Location = new System.Drawing.Point(220, 140);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(29, 13);
+            this.labelNom.TabIndex = 0;
+            this.labelNom.Text = "Nom";
+
             // 
-            // label2
+            // labelPrenom
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(210, 215);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "prenom";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelPrenom.AutoSize = true;
+            this.labelPrenom.Location = new System.Drawing.Point(220, 190);
+            this.labelPrenom.Name = "labelPrenom";
+            this.labelPrenom.Size = new System.Drawing.Size(49, 13);
+            this.labelPrenom.TabIndex = 1;
+            this.labelPrenom.Text = "Prénom";
+
             // 
-            // label3
+            // labelService
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(210, 259);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "service";
+            this.labelService.AutoSize = true;
+            this.labelService.Location = new System.Drawing.Point(220, 240);
+            this.labelService.Name = "labelService";
+            this.labelService.Size = new System.Drawing.Size(43, 13);
+            this.labelService.TabIndex = 2;
+            this.labelService.Text = "Service";
+
             // 
-            // textBox1
+            // txtNom
             // 
-            this.textBox1.Location = new System.Drawing.Point(295, 208);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtNom.Location = new System.Drawing.Point(320, 137);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(120, 20);
+            this.txtNom.TabIndex = 3;
+
             // 
-            // textBox2
+            // txtPrenom
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtPrenom.Location = new System.Drawing.Point(320, 187);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(120, 20);
+            this.txtPrenom.TabIndex = 4;
+
             // 
-            // textBox3
+            // txtService
             // 
-            this.textBox3.Location = new System.Drawing.Point(295, 162);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtService.Location = new System.Drawing.Point(320, 237);
+            this.txtService.Name = "txtService";
+            this.txtService.Size = new System.Drawing.Size(120, 20);
+            this.txtService.TabIndex = 5;
+
             // 
-            // button1
+            // btnValider
             // 
-            this.button1.Location = new System.Drawing.Point(305, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "valider";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnValider.Location = new System.Drawing.Point(335, 290);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(90, 30);
+            this.btnValider.TabIndex = 6;
+            this.btnValider.Text = "Valider";
+            this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
+
             // 
             // FrmAjoutPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+
+            this.Controls.Add(this.labelNom);
+            this.Controls.Add(this.labelPrenom);
+            this.Controls.Add(this.labelService);
+
+            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.txtPrenom);
+            this.Controls.Add(this.txtService);
+
+            this.Controls.Add(this.btnValider);
+
             this.Name = "FrmAjoutPersonnel";
-            this.Text = "FrmAjoutPersonnel";
+            this.Text = "Ajout d'un personnel";
+
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelNom;
+        private System.Windows.Forms.Label labelPrenom;
+        private System.Windows.Forms.Label labelService;
+
+        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtPrenom;
+        private System.Windows.Forms.TextBox txtService;
+
+        private System.Windows.Forms.Button btnValider;
     }
 }
