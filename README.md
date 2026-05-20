@@ -83,4 +83,4 @@ Le dossier `Release` contient :
 
 ## Auteur
 
-Projet réalisé par Harish dans le cadre du BTS SIO SLAM.
+Projet réalisé par Harishraj dans le cadre du BTS SIO SLAM.
